@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* a4 fixed size */
+.a4-container {
+  width: 794px;
+  height: 1123px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content_container {
+  margin: 58px 100px;
+}
+
+/* header bars is above the title */
+.header-bars {
+  display: flex;
+}
+
+.bar-teal {
+  width: 50px;
+  height: 12px;
+  background-color: rgb(39, 182, 163);
+  margin-right: 2px;
+}
+
+.bar-orange {
+  width: 50px;
+  height: 12px;
+  background-color: rgb(187, 112, 50);
+}
+
+.big-title {
+  font-size: 52px;
+  font-weight: bold;
+}
+.title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 22px;
+  color: rgb(80, 80, 80);
+  font-weight: bold;
+}
+.subtitle-1 {
+  font-size: 18px;
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+}
+.subtitle-1-normal {
+  font-size: 18px;
+  color: rgb(34, 34, 34);
+}
+
+.subtitle-2 {
+  font-size: 12px;
+  color: rgb(80, 80, 80);
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.paragraph {
+  font-size: 15px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 20px;
+}
+
+.date {
+  font-size: 14px;
+  color: rgb(80, 80, 80);
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.mt-1x {
+  margin-top: 189px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.mt-100 {
+  margin-top: 100px;
+}
+.mt-350 {
+  margin-top: 350px;
+}
+
+.my-30 {
+  margin-top: 30px;
+}
+.font-bold {
+  font-weight: 900;
+}
+.footer {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+}
+
+
+
+
+
+/* process-list */
+.process-list li {
+    counter-increment: step-counter;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.process-list li::before {
+    content: counter(step-counter) ".";
+    font-weight: bold;
+    margin-right: 15px;
+    min-width: 20px;
+    color: #333;
+}
+
+.process-list li p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+
+/* table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    font-size: 13px;
+    color: #666;
+}
+
+td:first-child {
+    background-color: #f8f9fa;
+    width: 140px;
+    color: #555;
+}
+
+td:last-child {
+    color: #333;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: underline;
+}
