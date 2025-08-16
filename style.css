@@ -24,19 +24,20 @@
 /* header bars is above the title */
 .header-bars {
   display: flex;
+  gap: 0px;
 }
 
 .bar-teal {
   width: 50px;
   height: 12px;
-  background-color: rgb(39, 182, 163);
+  background-color: rgb(60, 202, 183);
   margin-right: 2px;
 }
 
 .bar-orange {
   width: 50px;
   height: 12px;
-  background-color: rgb(187, 112, 50);
+  background-color: rgb(199, 122, 59);
 }
 
 .big-title {
